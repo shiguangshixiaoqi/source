@@ -1,0 +1,58 @@
+{
+	"pages": [ //pages数组中第一项表示应用启动页，参考：https://uniapp.dcloud.io/collocation/pages
+		{
+			"path": "pages/index/index",
+			"style": {
+				// "navigationBarTitleText": "首页"   //导航栏标题文字内容
+			}
+		}
+	    ,{
+            "path" : "pages/category/category",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "分类",
+                "enablePullDownRefresh": false
+            }
+            
+        }
+        ,{
+            "path" : "pages/user/user",
+            "style" :                                                                                    
+            {
+                // "navigationBarTitleText": "",
+                "enablePullDownRefresh": false
+            }
+            
+        }
+    ],
+	"globalStyle": {
+		"navigationBarTextStyle": "white",
+		"navigationBarTitleText": "校园电商",
+		"navigationBarBackgroundColor": "#87CEFA",
+		"backgroundColor": "#87CEFA"
+	},
+	"uniIdRouter": {},
+	"tabBar": { //设置底部tab的表现
+	"selectedColor": "#FFB6C1",
+		"list": [ //tab的列表 最少2个、最多5个tab
+			{
+				"pagePath": "pages/index/index" ,//首页
+				"iconPath": "static/icons/首页.png",
+				"selectedIconPath": "static/icons/首页-高亮.png",
+				"text": "首页" //导航栏的文字说明
+			},
+			{
+				"pagePath": "pages/category/category" ,//分类
+				"iconPath": "static/icons/分类.png",
+				"selectedIconPath": "static/icons/分类-高亮.png",
+				"text": "分类" //导航栏的文字说明
+			},
+			{
+				"pagePath": "pages/user/user" ,//我的
+				"iconPath": "static/icons/我的.png",
+				"selectedIconPath": "static/icons/我的-高亮.png",
+				"text": "我的" //导航栏的文字说明
+			}
+		]
+	}
+}
